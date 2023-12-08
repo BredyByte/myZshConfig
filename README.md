@@ -28,24 +28,24 @@ Welcome to my personalized Zsh configuration file! This README will guide you th
       ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
     - This plugin enables auto-completion of your commands.
-
-- Run the following command to install the `zsh-completions` plugin:
-    ```bash
-    git clone https://github.com/zsh-users/zsh-completions \
-      ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
-    ```
-    - This plugin enhances command completions.
    
 - To install the `autojump` plugin, execute the following command:
     - For Homebrew (macOS):
-    ```bash
-    brew update && brew install autojump
-    ```
+         ```bash
+         brew update && brew install autojump
+         ```
     
     - For apt (Debian/Ubuntu):
-    ```bash
-    sudo apt-get update && sudo apt-get install autojump
-    ```
+         ```bash
+         sudo apt-get update && sudo apt-get install autojump
+         ```
+    After installing move manually the folder `autojump` from /.oh-my-zsh/plugins to /.oh-my-zsh/custom/plugins
+    
+    - Git clone installing without moving the folder:
+         ```bash
+         git clone git://github.com/wting/autojump.git \
+           ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autojump
+         ```
 3. **Reload your console, and everything should work!**
 - To reload the console, execute
     ```bash
@@ -58,4 +58,3 @@ Welcome to my personalized Zsh configuration file! This README will guide you th
    - If you encounter issues or have suggestions, don't hesitate to contribute or create an issue.
 
 Happy coding with your newly customized environment! 🚀
-
