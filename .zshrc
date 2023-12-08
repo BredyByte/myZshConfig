@@ -1,14 +1,5 @@
-# Activate zsh-syntax-highlighting by adding the following line to ~/.zshrc
-source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Activate zsh-autosuggestions by adding the following line to ~/.zshrc
-source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Activate autojump by adding the following line to ~/.zshrc
-source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autojump/bin/autojump.zsh
-
 # Oh My Zsh plugins
-plugins=(git)
+plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting)
 
 # Aliases for convenience
 alias grep='grep --color=auto'
@@ -117,7 +108,7 @@ source $ZSH/oh-my-zsh.sh
 #
 
 # Load Homebrew config script
-source $HOME/.brewconfig.zsh
+# source $HOME/.brewconfig.zsh
 
 # Load aliases
 # alias cclean='bash ~/Cleaner_42.sh'
